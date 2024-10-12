@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Register for Our Event</h1>
+    <form id="registrationForm" novalidate>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10}">
+
+        <label for="eventSelect">Choose Event:</label>
+        <select id="eventSelect" name="eventSelect" required>
+            <option value="">Select an Event</option>
+            <option value="event1">Event 1</option>
+            <option value="event2">Event 2</option>
+            <option value="event3">Event 3</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <div id="formFeedback"></div>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
